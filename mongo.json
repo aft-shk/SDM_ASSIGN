@@ -1,0 +1,53 @@
+db.employee.insertMany(
+[
+  {
+    _id: ObjectId('660feb3c7b5a17aae19f990a'),
+    emono: 111,
+    ename: 'Deepali Vaidya',
+    sal: 40000,
+    dept: { deptno: 12, dname: 'Hr', dloc: 'Mumbai' },
+    Desg: 'Analyst',
+    mgr: { name: 'Satish', num: 111 },
+    project: [ { name: 'Project-1', Hrs: 4 }, { name: 'project-2', Hrs: 4 } ]
+  },
+  {
+    _id: ObjectId('660ff4787b5a17aae19f990b'),
+    empno: 113,
+    ename: 'Kiraz',
+    sal: 90000000,
+    dept: { deptno: 13, dname: 'CyberSecurity', dloc: 'Istanbul' },
+    desg: 'DataSecurity',
+    mgr: { name: 'Velvet', num: 123 },
+    project: [ { name: 'Project-3', hrs: 9 }, { name: 'Project-5', hrs: 12 } ]
+  },
+  {
+    _id: ObjectId('660ff4787b5a17aae19f990c'),
+    empno: 333,
+    ename: 'Kratos',
+    sal: 790000,
+    dept: { deptno: 18, dname: 'Manager', dloc: 'Odisha' },
+    desg: 'Head',
+    mgr: { name: 'Param', num: 43 },
+    project: [ { name: 'Project-9', hrs: 9 }, { name: 'Project-7', hrs: 43 } ]
+  },
+  {
+    _id: ObjectId('660ff7467b5a17aae19f990d'),
+    empno: 444,
+    ename: 'Dogla',
+    sal: 45000,
+    dept: { deptno: 17, dname: 'dataeng', dloc: 'Nashik' },
+    desg: 'engineer',
+    mgr: { name: 'Melvin', num: 44 },
+    project: [ { name: 'Project-5', hrs: 5 }, { name: 'Project-7', hrs: 4 } ]
+  },
+  {
+    _id: ObjectId('660ff7467b5a17aae19f990e'),
+    empno: 455,
+    ename: 'Maizwin',
+    sal: 65550,
+    dept: { deptno: 17, dname: 'devops', dloc: 'ujjain' },
+    mgr: { name: 'Kepler', num: 23 },
+    project: [ { name: 'Project-7', hrs: 4 }, { name: 'Project-6', hrs: 2 } ]
+  }
+]
+)
